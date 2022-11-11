@@ -7,7 +7,7 @@
     <title>Jogo de Escolhas (Combinação)</title>
 </head>
 <script>
-    function validateForm(){
+    /*function validateForm(){
         let sel1 = document.forms["combinacoes"]["sel1"].value;
         if (sel1 == "") {
         alert("Responda todas a todas as perguntas!");
@@ -33,44 +33,44 @@
         alert("Responda todas a todas as perguntas!");
         return false;
         }
-    }
+    }*/
 </script>
 <body>
     <form name="combinacoes" action="resultado.php" method="get" onsubmit="return validateForm()">
         <h1>Seleção 1</h1>
-        <input type="radio" name="sel1" value="err">Opção 1<br>
-        <input type="radio" name="sel1" value="err">Opção 2<br>
-        <input type="radio" name="sel1" value="err">Opção 3<br>
-        <input type="radio" name="sel1" value="err">Opção 4<br>
-        <input type="radio" name="sel1" value="cer">Opção 5<br>
+        <input type="radio" name="sel1_1" value="err">Opção 1<br>
+        <input type="radio" name="sel1_2" value="err">Opção 2<br>
+        <input type="radio" name="sel1_3" value="err">Opção 3<br>
+        <input type="radio" name="sel1_4" value="err">Opção 4<br>
+        <input type="radio" name="sel1_5" value="cer">Opção 5<br>
         <br><br>
         <h1>Seleção 2</h1>
-        <input type="radio" name="sel2" value="err">Opção 1<br>
-        <input type="radio" name="sel2" value="err">Opção 2<br>
-        <input type="radio" name="sel2" value="err">Opção 3<br>
-        <input type="radio" name="sel2" value="err">Opção 4<br>
-        <input type="radio" name="sel2" value="cer">Opção 5<br>
+        <input type="radio" name="sel2_1" value="err">Opção 1<br>
+        <input type="radio" name="sel2_2" value="err">Opção 2<br>
+        <input type="radio" name="sel2_3" value="err">Opção 3<br>
+        <input type="radio" name="sel2_4" value="err">Opção 4<br>
+        <input type="radio" name="sel2_5" value="cer">Opção 5<br>
         <br><br>
         <h1>Seleção 3</h1>
-        <input type="radio" name="sel3" value="err">Opção 1<br>
-        <input type="radio" name="sel3" value="err">Opção 2<br>
-        <input type="radio" name="sel3" value="err">Opção 3<br>
-        <input type="radio" name="sel3" value="err">Opção 4<br>
-        <input type="radio" name="sel3" value="cer">Opção 5<br>
+        <input type="radio" name="sel3_1" value="err">Opção 1<br>
+        <input type="radio" name="sel3_2" value="err">Opção 2<br>
+        <input type="radio" name="sel3_3" value="err">Opção 3<br>
+        <input type="radio" name="sel3_4" value="err">Opção 4<br>
+        <input type="radio" name="sel3_5" value="cer">Opção 5<br>
         <br><br>
         <h1>Seleção 4</h1>
-        <input type="radio" name="sel4" value="err">Opção 1<br>
-        <input type="radio" name="sel4" value="err">Opção 2<br>
-        <input type="radio" name="sel4" value="err">Opção 3<br>
-        <input type="radio" name="sel1" value="err">Opção 4<br>
-        <input type="radio" name="sel4" value="cer">Opção 5<br>
+        <input type="radio" name="sel4_1" value="err">Opção 1<br>
+        <input type="radio" name="sel4_2" value="err">Opção 2<br>
+        <input type="radio" name="sel4_3" value="err">Opção 3<br>
+        <input type="radio" name="sel1_4" value="err">Opção 4<br>
+        <input type="radio" name="sel4_5" value="cer">Opção 5<br>
         <br><br>
         <h1>Seleção 5</h1>
-        <input type="radio" name="sel5" value="err">Opção 1<br>
-        <input type="radio" name="sel5" value="err">Opção 2<br>
-        <input type="radio" name="sel5" value="err">Opção 3<br>
-        <input type="radio" name="sel5" value="err">Opção 4<br>
-        <input type="radio" name="sel5" value="cer">Opção 5<br>
+        <input type="radio" name="sel5_1" value="err">Opção 1<br>
+        <input type="radio" name="sel5_2" value="err">Opção 2<br>
+        <input type="radio" name="sel5_3" value="err">Opção 3<br>
+        <input type="radio" name="sel5_4" value="err">Opção 4<br>
+        <input type="radio" name="sel5_5" value="cer">Opção 5<br>
         <br><br>
         <input type="submit">
     </form>
