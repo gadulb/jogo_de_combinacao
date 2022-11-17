@@ -19,17 +19,25 @@
                     <td>ITEM 5</td>
                 </tr>
                 <tr><!-- IMAGEM -->
-                    <td><img src="" width="150">(Imagem 1)</td>
-                    <td><img src="" width="150">(Imagem 2)</td>
-                    <td><img src="" width="150">(Imagem )</td>
-                    <td><img src="" width="150">(Imagem)</td>
-                    <td><img src="" width="150">(Imagem)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 1)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 2)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 3)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 4)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 5)</td>
                 </tr>
                 <tr><!-- DESCRIÇÃO -->
                     <td>Descrição...</td>
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
                 </tr>
                 <tr><!-- SELEÇÃO -->
-                    <td>Selecionar: <input type="checkbox" name="sel1_1" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="arm1" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="arm2" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="arm3" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="arm4" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="arm5" value="err"></td>
                 </tr>
             </table>
             <table>
@@ -41,13 +49,25 @@
                     <td>ITEM 10</td>
                 </tr>
                 <tr>
-                    
+                    <td><img src="itens_matematica/" width="150">(Imagem 1)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 2)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 3)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 4)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 5)</td>
                 </tr>
                 <tr>
-                    
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
                 </tr>
                 <tr>
-                    
+                    <td>Selecionar: <input type="checkbox" name="esp1" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="esp2" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="esp3" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="esp4" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="esp5" value="err"></td>
                 </tr>
             </table>
             <table>
@@ -58,9 +78,27 @@
                     <td>ITEM 14</td>
                     <td>ITEM 15</td>
                 </tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
+                <tr>
+                    <td><img src="itens_matematica/" width="150">(Imagem 1)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 2)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 3)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 4)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 5)</td>
+                </tr>
+                <tr>
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
+                </tr>
+                <tr>
+                    <td>Selecionar: <input type="checkbox" name="esc1" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="esc2" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="esc3" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="esc4" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="esc5" value="err"></td>
+                </tr>
             </table>
             <table>
                 <tr>
@@ -70,9 +108,27 @@
                     <td>ITEM 19</td>
                     <td>ITEM 20</td>
                 </tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
+                <tr>
+                    <td><img src="itens_matematica/" width="150">(Imagem 1)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 2)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 3)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 4)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 5)</td>
+                </tr>
+                <tr>
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
+                </tr>
+                <tr>
+                    <td>Selecionar: <input type="checkbox" name="po1" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="po2" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="po3" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="po4" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="po5" value="err"></td>
+                </tr>
             </table>
             <table>
                 <tr>
@@ -82,9 +138,27 @@
                     <td>ITEM 24</td>
                     <td>ITEM 25</td>
                 </tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
+                <tr>
+                    <td><img src="itens_matematica/" width="150">(Imagem 1)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 2)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 3)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 4)</td>
+                    <td><img src="itens_matematica/" width="150">(Imagem 5)</td>
+                </tr>
+                <tr>
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
+                    <td>Descrição...</td>
+                </tr>
+                <tr>
+                    <td>Selecionar: <input type="checkbox" name="com1" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="com2" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="com3" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="com4" value="err"></td>
+                    <td>Selecionar: <input type="checkbox" name="com5" value="err"></td>
+                </tr>
             </table>
             <button type="button" onclick="verificar()">IR PARA A BATALHA</button>
         </form>
