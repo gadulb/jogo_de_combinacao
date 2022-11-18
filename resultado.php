@@ -1,5 +1,4 @@
 <?php
-require("fonts.php");
 // Armaduras
 $arm1 = filter_input(INPUT_GET, 'arm1');
 $arm2 = filter_input(INPUT_GET, 'arm2');
