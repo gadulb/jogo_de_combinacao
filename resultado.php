@@ -36,45 +36,50 @@ $com4 = filter_input(INPUT_GET, 'com4');
 $com5 = filter_input(INPUT_GET, 'com5');
 
 if ($arm3 && $esp5 && $esc5 && $po3 && $po4 && $com2 == 'cer'){ // Variáveis que têm o value="cer"
-    $msgVenceu = 'Parabéns, você fez uma escolha perfeita!';
-    $msgVenceu2 = 'Agora você pode vencer a batalha!';
+    $msgVenceu = 'Parabéns, Cavaleiro!<br><br>
+    <br>O reino de Inforny fora tomado pelos dragões e você, como um dos importantes cavaleiros do reino, enfrentou-os de forma sábia com êxito, mesmo não encontrando tempo suficiente para se preparar, por isso, além de parabenizá-lo pela sua sabedoria de escolhas, o reino o parabeniza pelo bom desempenho durante a guerra.   
+    <br><br><br>Ass. Reino de Inforny.';
 } else{
-    $msgPerdeu = 'Você falhou...';
+    $msgPerdeu = 'Lamentamos ao Cavaleiro...<br><br> 
+    <br>O reino de Inforny lamenta, através desta carta, à morte do cavaleiro. Por conta de suas más escolhas, não conseguiu resistir à guerra.
+    <br><br>Alguns dos itens encontrados que, possivelmente, o atrapalharam durante a guerra:<br><br>';
+    $msgPerdeu1 = '<br>Nossas condolências à família e amigos... 
+    <br><br><br><br>Ass. Reino de Inforny. ';
     //Armaduras
     $armadurasErr = $arm1 || $arm2 || $arm4 || $arm5; // Escolhas erradas do tipo específico
     if($armadurasErr){ 
-        $armErr = 'Você escolheu uma(s) armadura(s) ruim(s).<br>';
-    } /* else if ($arm3 && ($armadurasErr)){
-        echo 'Você escolheu uma combinação com armaduras repetidas sem necessidade.';
-    } */
+        $armErr = '♞ O cavaleiro escolheu uma(s) armadura(s) ruim(s).<br>';
+    } else{
+        $armErr = '';
+    }
     //Espadas
     $espadasErr = $esp1 || $esp2 || $esp3 || $esp4; //Errados
     if ($espadasErr == 'err'){
-        $espErr = 'Você escolheu uma(s) espada(s) ruim(s).<br>';
-    } /* else if ($esp5 && ($espadasErr)){
-        echo 'Você escolheu uma combinação com espadas repetidas sem necessidade.';
-    } */
+        $espErr = '♞ O cavaleiro escolheu uma(s) espada(s) ruim(s).<br>';
+    } else{
+        $espErr = '';
+    }
     //Escudos
     $escudosErr = $esc1 || $esc2 || $esc3 || $esc4;
     if ($escudosErr == 'err'){
-        $escErr = 'Você escolheu um(s) escudo(s) ruim(s).<br>';
-    } /* else if ($esc5 && ($escudosErr)){
-        echo 'Você escolheu uma combinação com escudos repetidos sem necessidade.';
-    } */
+        $escErr = '♞ O cavaleiro escolheu um(s) escudo(s) ruim(s).<br>';
+    } else{
+        $escErr = '';
+    }
     // Poções
     $pocoesErr = $po1 || $po2 || $po5;
     if ($pocoesErr == 'err'){
-        $poErr = 'Você escolheu uma(s) poção(s) ruim(s).<br>';
-    } /* else if ($po3 && $po4 && ($pocoesErr)){
-        echo 'Você escolheu uma combinação com poções repetidas sem necessidade.';
-    } */
+        $poErr = '♞ O cavaleiro escolheu uma(s) poção(s) ruim(s).<br>';
+    } else{
+        $poErr = '';
+    }
     // Comidas
     $comidasErr = $com1 || $com3 || $com4 || $com5;
     if ($comidasErr == 'err'){
-        $comErr = 'Você escolheu um(s) alimento(s) ruim(s).<br>';
-    } /* else if ($com2 && ($comidasErr)){
-        echo 'Você escolheu uma combinação com alimentos repetidas sem necessidade.';
-    } */
+        $comErr = '♞ O cavaleiro escolheu um(s) alimento(s) ruim(s).<br>';
+    } else{
+        $comErr = '';
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -98,7 +103,14 @@ if ($arm3 && $esp5 && $esc5 && $po3 && $po4 && $com2 == 'cer'){ // Variáveis qu
         <div class="titulo">
         GUERRA (IM)PERFEITA
         </div>
-    </center>
-    <div class="separacao"></div>
+        <div class="separacao"></div>
+</center>
+        <h2 class="desc">
+            <?php if($arm3 && $esp5 && $esc5 && $po3 && $po4 && $com2 == 'cer'){echo $msgVenceu;} 
+            else{
+                echo $msgPerdeu.$armErr.$espErr.$escErr.$poErr.$comErr.$msgPerdeu1;
+            }?>
+        </h2>
+    </div>
 </body>
 </html>
