@@ -103,7 +103,12 @@ body{
         cursor: pointer;
     }
 
-/* Resultados */
-.desc-dir{
-    text-align: right;
+/* Link */
+a{
+    color: antiquewhite;
+    font-family: 'Taviraj', serif;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
 }

@@ -93,23 +93,23 @@ if ($arm3 && $esp5 && $esc5 && $po3 && $po4 && $com2 == 'cer'){ // Variáveis qu
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@300&display=swap" rel="stylesheet">
-    <link href="style.css?v=1" rel="stylesheet">
+    <link href="style.css?v=2" rel="stylesheet">
     <title>Jogo de Escolhas (Combinação)</title>
 </head>
 <body>
 <center>
-    <div>
-        <div class="titulo">
-        GUERRA (IM)PERFEITA
-        </div>
-        <div class="separacao"></div>
+    <div class="titulo">GUERRA (IM)PERFEITA</div>
+    <div class="separacao"></div>
 </center>
-        <h2 class="desc">
-            <?php if($arm3 && $esp5 && $esc5 && $po3 && $po4 && $com2 == 'cer'){echo $msgVenceu;} 
-            else{
-                echo $msgPerdeu.$armErr.$espErr.$escErr.$poErr.$comErr.$msgPerdeu1;
-            }?>
-        </h2>
-    </div>
+    <h2 class="desc">
+        <?php if($arm3 && $esp5 && $esc5 && $po3 && $po4 && $com2 == 'cer'){echo $msgVenceu;} 
+        else{
+            echo $msgPerdeu.$armErr.$espErr.$escErr.$poErr.$comErr.$msgPerdeu1;
+        }?>
+    </h2>
+    <center>
+        <a href="https://github.com/gadulb/jogo_de_combinacao">Repositório do projeto (GitHub)</a>
+    </center>
+    <br><br><br>
 </body>
 </html>

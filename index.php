@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@300&display=swap" rel="stylesheet">
-    <link href="style.css?v=1" rel="stylesheet">
+    <link href="style.css?v=2" rel="stylesheet">
     <title>Jogo de Escolhas (Combinação)</title>
 </head>
 <body>
