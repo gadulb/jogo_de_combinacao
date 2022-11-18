@@ -1,75 +1,104 @@
 <?php
-$sel1_1 = filter_input(INPUT_GET, 'sel1_1');
-$sel1_2 = filter_input(INPUT_GET, 'sel1_2');
-$sel1_3 = filter_input(INPUT_GET, 'sel1_3');
-$sel1_4 = filter_input(INPUT_GET, 'sel1_4');
-$sel1_5 = filter_input(INPUT_GET, 'sel1_5');
+require("fonts.php");
+// Armaduras
+$arm1 = filter_input(INPUT_GET, 'arm1');
+$arm2 = filter_input(INPUT_GET, 'arm2');
+$arm3 = filter_input(INPUT_GET, 'arm3');
+$arm4 = filter_input(INPUT_GET, 'arm4');
+$arm5 = filter_input(INPUT_GET, 'arm5');
 
-$sel2_1 = filter_input(INPUT_GET, 'sel2_1');
-$sel2_2 = filter_input(INPUT_GET, 'sel2_2');
-$sel2_3 = filter_input(INPUT_GET, 'sel2_3');
-$sel2_4 = filter_input(INPUT_GET, 'sel2_4');
-$sel2_5 = filter_input(INPUT_GET, 'sel2_5');
+// Espadas
+$esp1 = filter_input(INPUT_GET, 'esp1');
+$esp2 = filter_input(INPUT_GET, 'esp2');
+$esp3 = filter_input(INPUT_GET, 'esp3');
+$esp4 = filter_input(INPUT_GET, 'esp4');
+$esp5 = filter_input(INPUT_GET, 'esp5');
 
-$sel3_1 = filter_input(INPUT_GET, 'sel3_1');
-$sel3_2 = filter_input(INPUT_GET, 'sel3_2');
-$sel3_3 = filter_input(INPUT_GET, 'sel3_3');
-$sel3_4 = filter_input(INPUT_GET, 'sel3_4');
-$sel3_5 = filter_input(INPUT_GET, 'sel3_5');
+// Escudos
+$esc1 = filter_input(INPUT_GET, 'esc1');
+$esc2 = filter_input(INPUT_GET, 'esc2');
+$esc3 = filter_input(INPUT_GET, 'esc3');
+$esc4 = filter_input(INPUT_GET, 'esc4');
+$esc5 = filter_input(INPUT_GET, 'esc5');
 
-$sel4_1 = filter_input(INPUT_GET, 'sel4_1');
-$sel4_2 = filter_input(INPUT_GET, 'sel4_2');
-$sel4_3 = filter_input(INPUT_GET, 'sel4_3');
-$sel4_4 = filter_input(INPUT_GET, 'sel4_4');
-$sel4_5 = filter_input(INPUT_GET, 'sel4_5');
+// Poções
+$po1 = filter_input(INPUT_GET, 'po1');
+$po2 = filter_input(INPUT_GET, 'po2');
+$po3 = filter_input(INPUT_GET, 'po3');
+$po4 = filter_input(INPUT_GET, 'po4');
+$po5 = filter_input(INPUT_GET, 'po5');
 
-$sel5_1 = filter_input(INPUT_GET, 'sel5_1');
-$sel5_2 = filter_input(INPUT_GET, 'sel5_2');
-$sel5_3 = filter_input(INPUT_GET, 'sel5_3');
-$sel5_4 = filter_input(INPUT_GET, 'sel5_4');
-$sel5_5 = filter_input(INPUT_GET, 'sel5_5');
+// Comidas
+$com1 = filter_input(INPUT_GET, 'com1');
+$com2 = filter_input(INPUT_GET, 'com2');
+$com3 = filter_input(INPUT_GET, 'com3');
+$com4 = filter_input(INPUT_GET, 'com4');
+$com5 = filter_input(INPUT_GET, 'com5');
 
-$cer = filter_input(INPUT_GET, 'cer');
-
-if ($sel1_4 && $sel1_5 /* variaveis certas */  && $sel2_5 && $sel3_5 && $sel4_5 && $sel5_5 == 'cer'){ //Ou substituir pela combinação (variáveis que têm o value="cer")
-    echo '<h1>Parabéns, você fez uma escolha perfeita!</h1>Agora você pode vencer a batalha!<br>;)';
+if ($arm3 && $esp5 && $esc5 && $po3 && $po4 && $com2 == 'cer'){ // Variáveis que têm o value="cer"
+    $msgVenceu = 'Parabéns, você fez uma escolha perfeita!';
+    $msgVenceu2 = 'Agora você pode vencer a batalha!';
 } else{
-    echo '<h1>Você falhou...</h1>';
-    /*if ($~armadura errada~ || $armadura_errada…~) (
-        echo “Você escolheu a armadura errada.”;
-        } else if ($~arm_cer~ && ($~arm_err~ ||…){
-        echo “Voce escolheu uma combinação com armadura repetidas sem necessidade”;
-        }*/
-    //Armaduras (ou outro objeto)
-    $tipo1 = $sel1_1 || $sel1_2 || $sel1_3; // || $sel1_4; //Errados
-    if($tipo1){ //Menos a opção certa
-        echo 'Você escolheu um(s) (sel1) ruim(s)<br>';
-    } else if ($sel1_4 && $sel1_5 && ($tipo1)){
-        echo 'Você escolheu uma combinação com armadura repetidas sem necessidade';
-    }
-    $tipo2 = $sel2_1 || $sel2_2 || $sel2_3 || $sel2_4; //Errados
-    if ($tipo2 == 'err'){
-        echo 'Você escolheu um(s) (sel2) ruim(s)<br>';
-    } else if ($sel2_5 && ($tipo2)){
-        echo 'Você escolheu uma combinação com (tipo 2) repetidas sem necessidade';
-    }
-    $tipo3 = $sel3_1 || $sel3_2 || $sel3_3 || $sel3_4;
-    if ($tipo3 == 'err'){
-        echo 'Você escolheu um(s) (sel3) ruim(s)<br>';
-    } else if ($sel3_5 && ($tipo3)){
-        echo 'Você escolheu uma combinação com (tipo 3) repetidas sem necessidade';
-    }
-    $tipo4 = $sel4_1 || $sel4_2 || $sel4_3 || $sel4_4;
-    if ($tipo4 == 'err'){
-        echo 'Você escolheu um(s) (sel4) ruim(s)<br>';
-    } else if ($sel4_5 && ($tipo4)){
-        echo 'Você escolheu uma combinação com (tipo 4) repetidas sem necessidade';
-    }
-    $tipo5 = $sel5_1 || $sel5_2 || $sel5_3 || $sel5_4;
-    if ($tipo5 == 'err'){
-        echo 'Você escolheu um(s) (sel5) ruim(s)<br>';
-    } else if ($sel5_5 && ($tipo5)){
-        echo 'Você escolheu uma combinação com (tipo 5) repetidas sem necessidade';
-    }
+    $msgPerdeu = 'Você falhou...';
+    //Armaduras
+    $armadurasErr = $arm1 || $arm2 || $arm4 || $arm5; // Escolhas erradas do tipo específico
+    if($armadurasErr){ 
+        $armErr = 'Você escolheu uma(s) armadura(s) ruim(s).<br>';
+    } /* else if ($arm3 && ($armadurasErr)){
+        echo 'Você escolheu uma combinação com armaduras repetidas sem necessidade.';
+    } */
+    //Espadas
+    $espadasErr = $esp1 || $esp2 || $esp3 || $esp4; //Errados
+    if ($espadasErr == 'err'){
+        $espErr = 'Você escolheu uma(s) espada(s) ruim(s).<br>';
+    } /* else if ($esp5 && ($espadasErr)){
+        echo 'Você escolheu uma combinação com espadas repetidas sem necessidade.';
+    } */
+    //Escudos
+    $escudosErr = $esc1 || $esc2 || $esc3 || $esc4;
+    if ($escudosErr == 'err'){
+        $escErr = 'Você escolheu um(s) escudo(s) ruim(s).<br>';
+    } /* else if ($esc5 && ($escudosErr)){
+        echo 'Você escolheu uma combinação com escudos repetidos sem necessidade.';
+    } */
+    // Poções
+    $pocoesErr = $po1 || $po2 || $po5;
+    if ($pocoesErr == 'err'){
+        $poErr = 'Você escolheu uma(s) poção(s) ruim(s).<br>';
+    } /* else if ($po3 && $po4 && ($pocoesErr)){
+        echo 'Você escolheu uma combinação com poções repetidas sem necessidade.';
+    } */
+    // Comidas
+    $comidasErr = $com1 || $com3 || $com4 || $com5;
+    if ($comidasErr == 'err'){
+        $comErr = 'Você escolheu um(s) alimento(s) ruim(s).<br>';
+    } /* else if ($com2 && ($comidasErr)){
+        echo 'Você escolheu uma combinação com alimentos repetidas sem necessidade.';
+    } */
 }
 ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@300&display=swap" rel="stylesheet">
+    <link href="style.css?v=1" rel="stylesheet">
+    <title>Jogo de Escolhas (Combinação)</title>
+</head>
+<body>
+<center>
+    <div>
+        <div class="titulo">
+        GUERRA (IM)PERFEITA
+        </div>
+    </center>
+    <div class="separacao"></div>
+</body>
+</html>
