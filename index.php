@@ -34,6 +34,12 @@
     <center>
         <form id="combinacoes" action="resultado.php" method="get">
             <table> <!-- ARMADURAS -->
+                <tr class="categoria">
+                    <td colspan="5">ARMADURAS</td>
+                </tr>
+                <tr class="s-categoria">  
+                    <td colspan="5"><hr></td>
+                </tr>
                 <tr class="nome"><!-- NOME -->
                     <td>Armadura padrão</td>
                     <td>Armadura robusta</td>
@@ -65,6 +71,12 @@
             </table>
             <br><br>
             <table> <!-- ESPADAS -->
+                <tr class="categoria">
+                    <td colspan="5">ESPADAS</td>
+                </tr>
+                <tr class="s-categoria">  
+                    <td colspan="5"><hr></td>
+                </tr>
                 <tr class="nome">
                     <td>Espada padrão</td>
                     <td>Espada infernal</td>
@@ -81,7 +93,7 @@
                 </tr>
                 <tr class="descricao">
                     <td>Uma simples espada de um simples cavaleiro.</td>
-                    <td>Espada conhecida por muito cavaleiros como destruidora de demônios.</td>
+                    <td>Espada conhecida por muitos cavaleiros como destruidora de demônios.</td>
                     <td>Uma espada forjada por um ferreiro talentoso.</td>
                     <td>Uma espada fina, porém muito cortante.</td>
                     <td>Espada utilizada somente pelos heróis dignos.</td>
@@ -96,6 +108,12 @@
             </table>
             <br><br>
             <table> <!-- ESCUDOS -->
+                <tr class="categoria">
+                    <td colspan="5">ESCUDOS</td>
+                </tr>
+                <tr class="s-categoria">  
+                    <td colspan="5"><hr></td>
+                </tr>
                 <tr class="nome">
                     <td>Escudo rústico</td>
                     <td>Escudo padrão</td>
@@ -127,6 +145,12 @@
             </table>
             <br><br>
             <table> <!-- POÇÕES -->
+                <tr class="categoria">
+                    <td colspan="5">POÇÕES</td>
+                </tr>
+                <tr class="s-categoria">  
+                    <td colspan="5"><hr></td>
+                </tr>
                 <tr class="nome">
                     <td>Poção de cura</td>
                     <td>Poção de força</td>
@@ -158,6 +182,12 @@
             </table>
             <br><br>
             <table> <!-- COMIDAS -->
+                <tr class="categoria">
+                    <td colspan="5">COMIDAS</td>
+                </tr>
+                <tr class="s-categoria">  
+                    <td colspan="5"><hr></td>
+                </tr>
                 <tr class="nome">
                     <td>Bife</td>
                     <td>Cerveja</td>
@@ -189,7 +219,11 @@
             </table>
             <br><br><br>
             <center><button type="button" onclick="verificar()">IR PARA A BATALHA</button></center>
-            <br><br>
+            <br><br><br>
+            <center>
+                <a target="blank" href="https://github.com/gadulb/jogo_de_combinacao">Repositório do projeto (GitHub)</a>
+            </center>
+            <br><br><br>
         </form>
     </div>
     <!--

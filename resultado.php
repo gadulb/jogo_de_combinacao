@@ -108,7 +108,7 @@ if ($arm3 && $esp5 && $esc5 && $po3 && $po4 && $com2 == 'cer'){ // Variáveis qu
         }?>
     </h2>
     <center>
-        <a href="https://github.com/gadulb/jogo_de_combinacao">Repositório do projeto (GitHub)</a>
+        <a target="blank" href="https://github.com/gadulb/jogo_de_combinacao">Repositório do projeto (GitHub)</a>
     </center>
     <br><br><br>
 </body>

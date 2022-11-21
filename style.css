@@ -51,7 +51,7 @@ body{
 
 /* Tabelas */
     table{
-        padding: 5px;
+        padding: 10px;
         background-color: antiquewhite;
         box-shadow: 5px 5px 7px 2px;
         width: 80%;
@@ -61,13 +61,22 @@ body{
         width: 175px;
         text-align: center;
     }
+    /* Categoria - Itens */
+    .categoria{
+        font-family: 'Aboreto', cursive;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    /* Separação em Hr */
+    .s-categoria td hr{
+        border-color: #8b5742;
+    }
     /* Nome - Itens */
     .nome{
         font-family: 'Aboreto', cursive;
         font-size: 20px;
         font-weight: bold;
     }
-    /* Imagem - Itens */
     /* Descrição - Itens */
     .descricao{
         font-family: 'Taviraj', serif;
