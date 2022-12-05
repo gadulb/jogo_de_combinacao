@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@300&display=swap" rel="stylesheet">
-    <link href="style.css?v=2" rel="stylesheet">
+    <link href="style1.css?" rel="stylesheet">
     <title>Jogo de Escolhas (Combinação)</title>
 </head>
 <body>
@@ -33,6 +33,24 @@
         
     <center>
         <form id="combinacoes" action="resultado.php" method="get">
+            <div> <!-- ARMADURAS -->
+                <div class="item">
+                    <center>
+                        <a>Armadura padrão</a><br>
+                        <img src="img/itens_matematica/armadura/armadura1.png" width="150"><br>
+                        <p>Uma armadura que possui uma proteção leve.</p>
+                        Selecionar: <input type="checkbox" name="arm1" value="err">
+                    </center>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
             <table> <!-- ARMADURAS -->
                 <tr class="categoria">
                     <td colspan="5">ARMADURAS</td>

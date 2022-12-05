@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Taviraj', serif;
+}    
+body{
+    background-color:#8b5742;
+}
+
+/* scroll */
+    ::-webkit-scrollbar {
+        width: 0.9em;
+        height: 0.5em;
+        background-color: #8b5742;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: antiquewhite;
+        border-radius: 1rem;
+        border: solid 0.3rem #8b5742;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #8b5742;
+        border: solid 0.3rem transparent;
+    }
+
+/* Título */
+    .titulo{
+        margin: 3%;
+        font-family: 'Aboreto', cursive;
+        color: antiquewhite;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+/* Separação */
+    .separacao{
+        width: 100%;
+        padding: 5px 0 5px 0;
+        background-color: antiquewhite;
+    }
+
+/* Descrição - Topo */
+    .desc{
+        font-style: italic;
+        margin: 10% 25% 10% 25%;
+        color: antiquewhite;
+        font-family: 'Taviraj', serif;
+    }
+
+/* Itens */
+    .item{
+        width: 250px;
+        background-color: antiquewhite;
+        padding: 20px 15px 20px 15px;
+        border-radius: 0.5rem;
+        font-family: 'Aboreto', cursive;
+        font-weight: bold;
+    }
+    .item a{
+        color: #8b5742;
+        font-family: 'Aboreto', cursive;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .item p{
+        font-family: 'Taviraj', serif;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .item input[type=checkbox]{
+        cursor: pointer;
+        margin: 0 0 0 10px;
+    }
+    
+/* Botão */
+    button{
+        padding: 1%;
+        font-family: 'Aboreto', cursive;
+        font-size: 20px;
+        font-weight: bold;
+        border: 0;
+        background-color: antiquewhite;
+    }
+    button:hover{
+        padding: 1%;
+        font-family: 'Aboreto', cursive;
+        font-size: 20px;
+        font-weight: bold;
+        border: 0;
+        box-shadow: 5px 5px 7px 2px;
+        cursor: pointer;
+    }
+
+/* Link */
+a{
+    color: antiquewhite;
+    font-family: 'Taviraj', serif;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
+}
